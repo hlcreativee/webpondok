@@ -20,7 +20,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Pondok Modern Darul Ihsan - Sleman, Yogyakarta',
+  title: 'Pondok Modern Darul Ihsan - Payaman Nganjuk Jawa Timur',
   description:
     'Mencetak Generasi Qurani, Berakhlak Mulia, Berprestasi, dan Berwawasan Global.',
 };
