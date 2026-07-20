@@ -1,49 +1,60 @@
 import type { Metadata } from 'next';
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
+
 import { AppProviders } from '@/providers/AppProviders';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
 
 const inter = Inter({
-  variable: '--font-sans',
   subsets: ['latin'],
+  variable: '--font-sans',
   display: 'swap',
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
-  variable: '--font-display',
   subsets: ['latin'],
+  variable: '--font-display',
   display: 'swap',
 });
 
 export const metadata: Metadata = {
   title: 'Pondok Modern Darul Ihsan - Sleman, Yogyakarta',
-  description: 'Mencetak Generasi Qurani, Berakhlak Mulia, Berprestasi, dan Berwawasan Global. Portal Informasi Resmi Pondok Pesantren Modern Darul Ihsan.',
-  keywords: ['pesantren', 'pondok modern', 'darul ihsan', 'tahfidz', 'sleman', 'yogyakarta', 'sekolah islam', 'kmi'],
-  openGraph: {
-    title: 'Pondok Modern Darul Ihsan',
-    description: 'Mencetak Generasi Qurani, Berakhlak Mulia, Berprestasi, dan Berwawasan Global.',
-    type: 'website',
-    locale: 'id_ID',
-  },
+  description:
+    'Mencetak Generasi Qurani, Berakhlak Mulia, Berprestasi, dan Berwawasan Global.',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="id" className={`${inter.variable} ${plusJakarta.variable} h-full antialiased`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col font-sans antialiased text-foreground bg-background">
+    <html
+      lang="id"
+      suppressHydrationWarning
+      className={`${inter.variable} ${plusJakarta.variable}`}
+    >
+      <body
+        className="
+          min-h-screen
+          bg-white
+          text-slate-900
+          dark:bg-slate-950
+          dark:text-slate-100
+          transition-colors
+          duration-300
+        "
+      >
         <AppProviders>
-          <div className="flex flex-col min-h-screen">
+          <div className="flex min-h-screen flex-col">
             <Navbar />
-            <main className="flex-grow pt-20">
+
+            <main className="flex-1 pt-20">
               {children}
             </main>
+
             <Footer />
             <BackToTop />
           </div>

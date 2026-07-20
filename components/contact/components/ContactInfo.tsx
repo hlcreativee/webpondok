@@ -41,7 +41,7 @@ export default function ContactInfo() {
         <h2 className="text-xl md:text-2xl font-bold font-display text-gray-900 dark:text-white">
           Detail Kontak
         </h2>
-        
+
         <div className="flex flex-col gap-4">
           {/* Address */}
           <div className="flex gap-4 items-start bg-gray-50 dark:bg-gray-900/40 p-5 rounded-2xl border border-gray-100 dark:border-gray-850">
@@ -118,7 +118,7 @@ export default function ContactInfo() {
               <label className="text-xs font-bold text-gray-700 dark:text-gray-300">Nama Lengkap *</label>
               <Input required name="name" value={formData.name} onChange={handleChange} placeholder="Nama Anda" />
             </div>
-            
+
             <div className="flex flex-col gap-1">
               <label className="text-xs font-bold text-gray-700 dark:text-gray-300">Email *</label>
               <Input type="email" required name="email" value={formData.email} onChange={handleChange} placeholder="alamat-email@gmail.com" />
@@ -154,7 +154,7 @@ export default function ContactInfo() {
               <circle cx="250" cy="105" r="4" fill="white" />
             </g>
           </svg>
-          
+
           <div className="relative z-10 bg-white/90 dark:bg-gray-900/90 border border-gray-100 dark:border-gray-800 p-4 rounded-2xl flex items-center justify-between text-left">
             <div>
               <h4 className="text-xs font-bold text-gray-800 dark:text-white">Peta Kampus Darul Ihsan</h4>

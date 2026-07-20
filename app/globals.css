@@ -1,27 +1,30 @@
 @import "tailwindcss";
 
+/* =========================
+   LIGHT THEME
+========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #0a0f0d;
+  color-scheme: light;
+
+  --background: #fafafa;
+  --foreground: #111827;
 
   --card: #ffffff;
-  --card-foreground: #0a0f0d;
+  --card-foreground: #111827;
 
   --popover: #ffffff;
-  --popover-foreground: #0a0f0d;
+  --popover-foreground: #111827;
 
   --primary: #059669;
-  /* Emerald Green */
   --primary-foreground: #ffffff;
 
   --secondary: #f3f4f6;
-  --secondary-foreground: #1f2937;
+  --secondary-foreground: #374151;
 
-  --muted: #f3f4f6;
+  --muted: #f8fafc;
   --muted-foreground: #6b7280;
 
   --accent: #d97706;
-  /* Gold Accent */
   --accent-foreground: #ffffff;
 
   --destructive: #ef4444;
@@ -29,86 +32,159 @@
 
   --border: #e5e7eb;
   --input: #e5e7eb;
-  --ring: #059669;
+  --ring: #10b981;
 
   --radius: 0.75rem;
 }
 
+/* =========================
+   DARK THEME
+========================= */
 .dark {
-  --background: #090f0c;
-  --foreground: #f3f4f6;
+  color-scheme: dark;
 
-  --card: #0f1613;
-  --card-foreground: #f3f4f6;
+  --background: #08110d;
+  --foreground: #f8fafc;
 
-  --popover: #0f1613;
-  --popover-foreground: #f3f4f6;
+  --card: #101815;
+  --card-foreground: #f8fafc;
+
+  --popover: #101815;
+  --popover-foreground: #f8fafc;
 
   --primary: #10b981;
-  /* Lighter Emerald for Dark Mode */
-  --primary-foreground: #064e3b;
+  --primary-foreground: #ffffff;
 
-  --secondary: #1a221f;
+  --secondary: #16201c;
   --secondary-foreground: #f3f4f6;
 
-  --muted: #1a221f;
-  --muted-foreground: #9ca3af;
+  --muted: #16201c;
+  --muted-foreground: #94a3b8;
 
   --accent: #f59e0b;
-  /* Gold Accent */
-  --accent-foreground: #1e1b4b;
+  --accent-foreground: #111827;
 
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
 
-  --border: #242e2a;
-  --input: #242e2a;
-  --ring: #10b981;
+  --border: #26332d;
+  --input: #26332d;
+  --ring: #34d399;
 }
+
+/* =========================
+   TAILWIND V4 THEME
+========================= */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
+
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
+
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
+
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
+
   --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
 }
+
+/* =========================
+   GLOBAL
+========================= */
 
 * {
-  border-color: var(--border);
   box-sizing: border-box;
-}
-
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-feature-settings: "rlig" 1, "calt" 1;
+  border-color: var(--border);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom animation helper utilities */
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+  font-feature-settings: "rlig" 1, "calt" 1;
+
+  transition:
+    background-color .35s ease,
+    color .35s ease;
+}
+
+/* Native Form */
+
+input,
+textarea,
+select {
+  background: var(--card);
+  color: var(--foreground);
+  border-color: var(--border);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted-foreground);
+}
+
+/* Selection */
+
+::selection {
+  background: rgba(16, 185, 129, .25);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+/* Focus */
+
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, .25);
+}
+
+/* Animation */
+
 .animate-fade-in {
-  animation: fadeIn 0.5s ease-out forwards;
+  animation: fadeIn .5s ease-out forwards;
 }
 
 @keyframes fadeIn {
@@ -120,17 +196,5 @@ html {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background-color: var(--background);
-    color: var(--foreground);
-    transition:
-      background-color .3s ease,
-      color .3s ease;
   }
 }

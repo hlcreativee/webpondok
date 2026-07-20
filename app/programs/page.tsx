@@ -4,22 +4,35 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Program Pendidikan - Pondok Modern Darul Ihsan',
-  description: 'Program pendidikan formal (MTs, MA), Tahfidzul Qur\'an, kajian kitab kuning, teknologi informasi, dan pembiasaan bahasa asing.',
+  description:
+    "Program pendidikan formal (MTs, MA), Tahfidzul Qur'an, Tahfidzul Qur'an, kajian kitab kuning, teknologi informasi, dan pembiasaan bahasa asing.",
 };
 
 export default function ProgramsPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center flex flex-col gap-10">
-      <div className="max-w-3xl mx-auto flex flex-col gap-3">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-gray-900 dark:text-white">
-          Program Pendidikan
-        </h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-          Pilihan jenjang akademik formal dan program kepesantrenan terpadu di Pondok Modern Darul Ihsan.
-        </p>
-      </div>
+    <main className="relative isolate bg-background">
+      <div className="mx-auto max-w-7xl px-6 py-16">
 
-      <ProgramList />
-    </div>
+        <div className="mx-auto mb-16 max-w-3xl text-center">
+
+          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-600 dark:text-emerald-400">
+            Program Pendidikan
+          </span>
+
+          <h1 className="mt-4 text-4xl font-extrabold text-foreground">
+            Program Pendidikan
+          </h1>
+
+          <p className="mt-5 text-lg leading-8 text-muted-foreground">
+            Pilihan jenjang akademik formal dan program kepesantrenan
+            terpadu di Pondok Modern Darul Ihsan.
+          </p>
+
+        </div>
+
+        <ProgramList />
+
+      </div>
+    </main>
   );
 }

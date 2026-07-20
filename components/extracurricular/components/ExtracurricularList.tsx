@@ -42,9 +42,7 @@ function getExtraIcon(iconName: string) {
 }
 
 const container: Variants = {
-  hidden: {
-    opacity: 0,
-  },
+  hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
@@ -74,24 +72,40 @@ export default function ExtracurricularList() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: '-50px' }}
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 text-left"
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
     >
       {extraData.map((extra) => (
         <motion.div
           key={extra.id}
           variants={itemVariant}
-          className="rounded-2xl border border-gray-100 bg-white/70 p-5 shadow-sm hover:shadow-md dark:border-gray-850 dark:bg-gray-900/40 backdrop-blur-md flex flex-col gap-3 hover:-translate-y-0.5 transition-all duration-200 group"
+          className="
+            rounded-2xl
+            border
+            border-slate-200
+            bg-white
+            p-6
+            shadow-md
+            transition-all
+            duration-300
+            hover:-translate-y-1
+            hover:shadow-xl
+            dark:border-slate-700
+            dark:bg-slate-900
+            flex
+            flex-col
+            gap-4
+          "
         >
-          <div className="p-2.5 rounded-xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/20 dark:text-emerald-400 w-fit shrink-0 group-hover:scale-105 transition-transform duration-300">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400">
             {getExtraIcon(extra.iconName)}
           </div>
 
-          <div className="flex flex-col gap-1.5">
-            <h3 className="text-sm md:text-base font-bold font-display text-gray-950 dark:text-white leading-tight">
+          <div>
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white">
               {extra.title}
             </h3>
 
-            <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+            <p className="mt-3 text-sm leading-7 text-slate-700 dark:text-slate-300">
               {extra.desc}
             </p>
           </div>

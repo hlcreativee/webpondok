@@ -4,22 +4,36 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Berita & Informasi - Pondok Modern Darul Ihsan',
-  description: 'Informasi pengumuman PSB, liputan prestasi, agenda wisuda tahfidz, studi banding alumni, perlombaan futsal, dan agenda pesantren.',
+  description:
+    'Informasi pengumuman PSB, liputan prestasi, agenda wisuda tahfidz, studi banding alumni, perlombaan futsal, dan agenda pesantren.',
 };
 
 export default function NewsPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center flex flex-col gap-10">
-      <div className="max-w-3xl mx-auto flex flex-col gap-3">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-gray-900 dark:text-white">
-          Warta &amp; Kabar Pesantren
-        </h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-          Kumpulan berita resmi, dokumentasi agenda tahunan, informasi pengumuman penting, dan catatan prestasi santri Darul Ihsan.
-        </p>
-      </div>
+    <main className="bg-slate-50 dark:bg-[#090f0c]">
+      <div className="mx-auto max-w-7xl px-6 py-16">
 
-      <NewsList />
-    </div>
+        <div className="mx-auto mb-14 max-w-3xl text-center">
+
+          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 dark:text-emerald-400">
+            Berita Pesantren
+          </span>
+
+          <h1 className="mt-4 text-4xl md:text-5xl font-extrabold font-display text-slate-900 dark:text-white">
+            Warta &amp; Kabar Pesantren
+          </h1>
+
+          <p className="mt-5 text-lg leading-8 text-slate-700 dark:text-slate-300">
+            Kumpulan berita resmi, dokumentasi agenda tahunan,
+            informasi pengumuman penting, dan catatan prestasi
+            santri Pondok Modern Darul Ihsan.
+          </p>
+
+        </div>
+
+        <NewsList />
+
+      </div>
+    </main>
   );
 }

@@ -1,25 +1,43 @@
-import React from 'react';
-import AboutInfo from '@/components/about/components/AboutInfo';
 import type { Metadata } from 'next';
+import AboutInfo from '@/components/about/components/AboutInfo';
 
 export const metadata: Metadata = {
-  title: 'Tentang Pondok - Pondok Modern Darul Ihsan',
-  description: 'Sejarah singkat pendirian, visi, misi, dan profil pendiri Pondok Modern Darul Ihsan Sleman, Yogyakarta.',
+  title: 'Tentang Pondok | Pondok Modern Darul Ihsan',
+  description:
+    'Sejarah singkat, visi, misi, serta profil Pondok Modern Darul Ihsan Sleman, Yogyakarta.',
 };
 
 export default function AboutPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center flex flex-col gap-10">
-      <div className="max-w-3xl mx-auto flex flex-col gap-3">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-gray-900 dark:text-white">
-          Profil Pondok Pesantren
-        </h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-          Mengenal visi luhur, tonggak sejarah pendirian, visi, misi, dan sosok pimpinan Pondok Modern Darul Ihsan.
-        </p>
-      </div>
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
 
-      <AboutInfo />
-    </div>
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+
+        {/* Heading */}
+        <div className="mx-auto mb-16 max-w-3xl text-center">
+
+          <span className="inline-block rounded-full bg-emerald-100 px-4 py-1 text-sm font-semibold uppercase tracking-[0.25em] text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
+            Tentang Pondok
+          </span>
+
+          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
+            Profil Pondok Pesantren
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-700 dark:text-slate-300">
+            Mengenal visi luhur, sejarah berdirinya pondok, visi, misi,
+            serta sosok pimpinan Pondok Modern Darul Ihsan sebagai lembaga
+            pendidikan Islam yang berkomitmen mencetak generasi Qurani,
+            berakhlak mulia, dan berwawasan global.
+          </p>
+
+        </div>
+
+        {/* Content */}
+        <AboutInfo />
+
+      </section>
+
+    </main>
   );
 }

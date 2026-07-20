@@ -14,7 +14,7 @@ export default function Stats() {
       desc: 'Santri aktif tingkat MTs & MA',
       icon: <Users className="w-6 h-6" />,
       colorClass:
-        'bg-emerald-50 text-emerald-600 dark:bg-emerald-950/20 dark:text-emerald-400',
+        'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400',
     },
     {
       id: 'ustadz',
@@ -23,7 +23,7 @@ export default function Stats() {
       desc: 'Ustadz & Ustadzah bersanad',
       icon: <GraduationCap className="w-6 h-6" />,
       colorClass:
-        'bg-blue-50 text-blue-600 dark:bg-blue-950/20 dark:text-blue-400',
+        'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400',
     },
     {
       id: 'program',
@@ -32,7 +32,7 @@ export default function Stats() {
       desc: 'Pendidikan formal & kajian keagamaan',
       icon: <BookOpen className="w-6 h-6" />,
       colorClass:
-        'bg-amber-50 text-amber-600 dark:bg-amber-950/20 dark:text-amber-400',
+        'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
     },
     {
       id: 'alumni',
@@ -41,7 +41,7 @@ export default function Stats() {
       desc: 'Negara studi & pengabdian alumni',
       icon: <Award className="w-6 h-6" />,
       colorClass:
-        'bg-indigo-50 text-indigo-600 dark:bg-indigo-950/20 dark:text-indigo-400',
+        'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400',
     },
   ];
 
@@ -66,15 +66,16 @@ export default function Stats() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 100,
       },
     },
   };
 
   return (
-    <section className="py-12 bg-white dark:bg-transparent">
+    <section className="py-14 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <motion.div
           variants={container}
           initial="hidden"
@@ -86,11 +87,29 @@ export default function Stats() {
             <motion.div
               key={stat.id}
               variants={item}
-              className="rounded-3xl border border-gray-100 bg-white/60 p-6 shadow-md hover:shadow-lg dark:border-gray-850 dark:bg-gray-900/40 backdrop-blur-md flex items-start gap-4 hover:-translate-y-1 transition-all duration-300 text-left group"
+              whileHover={{ y: -6 }}
+              className="
+                rounded-3xl
+                border
+                border-slate-200
+                dark:border-slate-700
+                bg-white
+                dark:bg-slate-900/80
+                backdrop-blur
+                p-6
+                shadow-md
+                hover:shadow-xl
+                transition-all
+                duration-300
+                flex
+                items-start
+                gap-4
+                group
+              "
             >
               <div
                 className={cn(
-                  'p-3 rounded-2xl shrink-0 group-hover:scale-105 transition-transform duration-300',
+                  'p-3 rounded-2xl shrink-0 transition-transform duration-300 group-hover:scale-110',
                   stat.colorClass
                 )}
               >
@@ -98,21 +117,24 @@ export default function Stats() {
               </div>
 
               <div className="flex flex-col">
-                <span className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white font-display">
+
+                <span className="text-3xl font-extrabold text-slate-900 dark:text-white">
                   {stat.value}
                 </span>
 
-                <span className="text-xs font-bold text-gray-700 dark:text-gray-300 mt-0.5">
+                <span className="mt-1 text-sm font-semibold text-slate-700 dark:text-slate-300">
                   {stat.label}
                 </span>
 
-                <span className="text-[11px] text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                <span className="mt-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
                   {stat.desc}
                 </span>
+
               </div>
             </motion.div>
           ))}
         </motion.div>
+
       </div>
     </section>
   );

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import { Menu, X, Sun, Moon } from 'lucide-react';
@@ -17,7 +18,7 @@ export default function Navbar() {
   // Set mounted state to true once the client side renders to prevent hydration mismatch for theme
   useEffect(() => {
     setMounted(true);
-    
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 15);
     };
@@ -50,22 +51,14 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-14">
           {/* Logo & School Name */}
           <Link href="/" className="flex items-center gap-3 group focus:outline-none">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-800 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-800/20 group-hover:scale-105 transition-transform duration-300">
-              {/* Clean Islamic Geometric / Minaret Book SVG Icon */}
-              <svg
-                className="w-6 h-6 text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-                <path d="M12 6v6" />
-                <path d="M10 8h4" />
-              </svg>
+            <div className="w-10 h-10 rounded-xl bg-white p-1 flex items-center justify-center overflow-hidden shadow-lg shadow-emerald-800/20 group-hover:scale-105 transition-transform duration-300">
+              <Image
+                src="/logopondok.jpeg"
+                alt="Logo Pondok Modern Darul Ihsan"
+                width={40}
+                height={40}
+                className="object-contain rounded-lg"
+              />
             </div>
             <div className="flex flex-col text-left">
               <span className="text-lg font-bold font-display tracking-tight text-emerald-800 dark:text-emerald-400 leading-none">
@@ -114,7 +107,7 @@ export default function Navbar() {
                 )}
               </button>
             )}
-            
+
             {/* CTA Button */}
             <Link
               href="/registration"
