@@ -16,7 +16,6 @@ export default function Footer() {
     { href: '/news', label: 'Berita' },
     { href: '/gallery', label: 'Galeri' },
     { href: '/registration', label: 'Pendaftaran' },
-    { href: '/contact', label: 'Kontak' },
   ];
 
   return (
