@@ -28,8 +28,8 @@ export default function Stats() {
     {
       id: 'program',
       label: 'Program Pendidikan',
-      value: '8',
-      desc: 'Pendidikan formal & kajian keagamaan',
+      value: '7',
+      desc: 'Program unggulan & keterampilan santri',
       icon: <BookOpen className="w-6 h-6" />,
       colorClass:
         'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400',
