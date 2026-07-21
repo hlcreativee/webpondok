@@ -36,16 +36,6 @@ export default function Hero() {
           />
         </motion.div>
 
-        {/* Subtitle */}
-        <motion.h2
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: .6, delay: .15 }}
-          className="text-sm md:text-base font-bold tracking-[0.3em] uppercase text-emerald-700 dark:text-emerald-400 mb-3"
-        >
-          Pondok Modern
-        </motion.h2>
-
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -63,11 +53,11 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: .6, delay: .3 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-6 max-w-2xl text-lg md:text-xl leading-relaxed italic text-slate-600 dark:text-slate-300"
         >
-          &quot;Mencetak Generasi Qurani, Berakhlak Mulia, Berprestasi,
-          dan Berwawasan Global.&quot;
+          &quot;Mewujudkan Generasi Muslim yang Beriman, Berilmu,
+          Berakhlakul Karimah, Mandiri, dan Berprestasi.&quot;
         </motion.p>
 
         {/* Buttons */}

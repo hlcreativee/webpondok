@@ -18,8 +18,8 @@ export default function Stats() {
     },
     {
       id: 'ustadz',
-      label: 'Jumlah Ustadz',
-      value: '60+',
+      label: 'Jumlah Asatidz',
+      value: '150+',
       desc: 'Ustadz & Ustadzah bersanad',
       icon: <GraduationCap className="w-6 h-6" />,
       colorClass:
@@ -37,7 +37,7 @@ export default function Stats() {
     {
       id: 'alumni',
       label: 'Alumni',
-      value: '15+',
+      value: '900+',
       desc: 'Negara studi & pengabdian alumni',
       icon: <Award className="w-6 h-6" />,
       colorClass:

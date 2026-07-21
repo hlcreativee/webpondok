@@ -3,9 +3,9 @@ import CurriculumTimeline from '@/components/curriculum/components/CurriculumTim
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kurikulum - Pondok Modern Darul Ihsan',
+  title: 'Kurikulum - Pondok Modern Darul-Ihsan',
   description:
-    'Kurikulum terintegrasi mencakup Kemenag, KMI Gontor, Program Tahfidz, Bahasa Arab & Inggris aktif, Kepemimpinan, dan Muhadloroh.',
+    'Sistem pendidikan Pondok Modern Darul-Ihsan yang mengintegrasikan Kurikulum Pondok Modern, Kurikulum Kementerian Agama (Kemenag), dan Kurikulum Salafiyah untuk membentuk santri yang beriman, berilmu, berakhlak mulia, serta berjiwa kepemimpinan.',
 };
 
 export default function CurriculumPage() {
@@ -20,12 +20,17 @@ export default function CurriculumPage() {
           </span>
 
           <h1 className="mt-4 text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
-            Sistem Kurikulum Terintegrasi
+            Sistem Pendidikan Terpadu
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-slate-700 dark:text-slate-300">
-            Tatanan materi pengajaran yang meramu kurikulum nasional dengan
-            karakteristik khas kepesantrenan modern.
+            Pondok Modern Darul-Ihsan menerapkan sistem pendidikan yang
+            mengintegrasikan <strong>Kurikulum Pondok Modern</strong>,
+            <strong> Kurikulum Kementerian Agama (Kemenag)</strong>, dan
+            <strong> Kurikulum Salafiyah</strong> untuk mewujudkan
+            keseimbangan antara ilmu agama, ilmu pengetahuan, pembentukan
+            akhlak, penguasaan bahasa Arab dan Bahasa Inggris, serta
+            pengembangan karakter dan kepemimpinan santri.
           </p>
 
         </div>

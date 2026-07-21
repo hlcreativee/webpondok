@@ -35,7 +35,6 @@ export default function Navbar() {
     { href: '/news', label: 'Berita' },
     { href: '/gallery', label: 'Galeri' },
     { href: '/registration', label: 'Pendaftaran' },
-    { href: '/contact', label: 'Kontak' },
   ];
 
   return (

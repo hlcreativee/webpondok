@@ -4,7 +4,7 @@ import AboutInfo from '@/components/about/components/AboutInfo';
 export const metadata: Metadata = {
   title: 'Tentang Pondok | Pondok Modern Darul Ihsan',
   description:
-    'Sejarah singkat, visi, misi, serta profil Pondok Modern Darul Ihsan Sleman, Yogyakarta.',
+    'Sejarah singkat, visi, misi, serta profil Pondok Modern Darul Ihsan Payaman Nganjuk Jawa Timur.',
 };
 
 export default function AboutPage() {

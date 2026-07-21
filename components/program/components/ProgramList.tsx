@@ -5,37 +5,48 @@ import { motion, type Variants } from 'framer-motion';
 import {
   BookOpen,
   GraduationCap,
-  Flame,
   Languages,
-  Key,
-  Cpu,
-  Compass,
+  Monitor,
+  Hammer,
+  ChefHat,
+  Scissors,
 } from 'lucide-react';
+
 import { programsData } from '@/lib/data';
 
 function getProgramIcon(iconName: string) {
   switch (iconName) {
-    case 'cap':
-      return <GraduationCap className="w-6 h-6" />;
-
     case 'book':
       return <BookOpen className="w-6 h-6" />;
 
-    case 'flame':
-      return <Flame className="w-6 h-6" />;
-
     case 'lang-ar':
-    case 'lang-en':
-      return <Languages className="w-6 h-6" />;
+      return (
+        <span className="text-xl font-bold font-serif">
+          ع
+        </span>
+      );
 
-    case 'key':
-      return <Key className="w-6 h-6" />;
+    case 'lang-en':
+      return (
+        <span className="text-lg font-bold tracking-wide">
+          EN
+        </span>
+      );
 
     case 'cpu':
-      return <Cpu className="w-6 h-6" />;
+      return <Monitor className="w-6 h-6" />;
+
+    case 'flame':
+      return <Hammer className="w-6 h-6" />;
+
+    case 'key':
+      return <ChefHat className="w-6 h-6" />;
+
+    case 'cap':
+      return <Scissors className="w-6 h-6" />;
 
     default:
-      return <Compass className="w-6 h-6" />;
+      return <GraduationCap className="w-6 h-6" />;
   }
 }
 
@@ -60,7 +71,8 @@ const itemVariant: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.45,
+      ease: 'easeOut',
     },
   },
 };
@@ -72,32 +84,41 @@ export default function ProgramList() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: '-50px' }}
-      className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
+      className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4"
     >
       {programsData.map((prog) => (
         <motion.div
           key={prog.id}
           variants={itemVariant}
-          whileHover={{ y: -6 }}
+          whileHover={{
+            y: -8,
+            transition: { duration: 0.2 },
+          }}
           className="
             group
-            flex
-            flex-col
-            gap-5
+            relative
+            overflow-hidden
             rounded-3xl
             border
-            border-border
-            bg-card
+            border-slate-200
+            dark:border-slate-700
+            bg-white
+            dark:bg-slate-900
             p-7
             shadow-md
             transition-all
             duration-300
-            hover:-translate-y-1
-            hover:shadow-xl
+            hover:shadow-2xl
           "
         >
+          {/* Background Blur */}
+          <div className="absolute -top-10 -right-10 h-24 w-24 rounded-full bg-emerald-500/10 blur-3xl" />
+
+          {/* Icon */}
           <div
             className="
+              relative
+              z-10
               flex
               h-14
               w-14
@@ -105,29 +126,27 @@ export default function ProgramList() {
               justify-center
               rounded-2xl
               bg-emerald-100
+              dark:bg-emerald-900/30
               text-emerald-700
+              dark:text-emerald-400
               transition-transform
               duration-300
               group-hover:scale-110
-              dark:bg-emerald-900/30
-              dark:text-emerald-400
             "
           >
             {getProgramIcon(prog.iconName)}
           </div>
 
-          <div className="space-y-3">
-
-            <h3 className="text-xl font-bold text-foreground">
+          {/* Content */}
+          <div className="relative z-10 mt-6 space-y-3">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white">
               {prog.title}
             </h3>
 
-            <p className="text-sm leading-7 text-muted-foreground">
+            <p className="text-sm leading-7 text-slate-600 dark:text-slate-300">
               {prog.desc}
             </p>
-
           </div>
-
         </motion.div>
       ))}
     </motion.div>

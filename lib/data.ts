@@ -57,28 +57,47 @@ export const programsData: ProgramItem[] = [
     {
         id: 1,
         title: "Tahfidz Al-Qur'an",
-        desc: "Program menghafal Al-Qur'an.",
+        desc: "Program pembinaan hafalan Al-Qur'an disertai tahsin dan muroja'ah untuk membentuk generasi Qur'ani yang berakhlak mulia.",
         iconName: "book",
     },
     {
         id: 2,
-        title: "Pendidikan Formal",
-        desc: "Kurikulum nasional dan kepesantrenan.",
-        iconName: "cap",
-    },
-    {
-        id: 3,
         title: "Bahasa Arab",
-        desc: "Pembiasaan komunikasi Bahasa Arab.",
+        desc: "Pembiasaan penggunaan Bahasa Arab dalam kegiatan sehari-hari sebagai bekal memahami literatur Islam dan komunikasi internasional.",
         iconName: "lang-ar",
     },
     {
+        id: 3,
+        title: "Bahasa Inggris",
+        desc: "Program pembelajaran dan praktik Bahasa Inggris guna meningkatkan kemampuan komunikasi serta wawasan global santri.",
+        iconName: "lang-en",
+    },
+    {
         id: 4,
-        title: "Teknologi Informasi",
-        desc: "Pembelajaran komputer dan teknologi.",
+        title: "Multimedia",
+        desc: "Membekali santri dengan keterampilan desain grafis, fotografi, videografi, dan pengelolaan media digital.",
         iconName: "cpu",
     },
+    {
+        id: 5,
+        title: "Pengelasan",
+        desc: "Program keterampilan vokasi yang memberikan pengetahuan dasar dan praktik teknik pengelasan sebagai bekal dunia kerja.",
+        iconName: "flame",
+    },
+    {
+        id: 6,
+        title: "Tata Boga",
+        desc: "Membina keterampilan dalam pengolahan makanan, penyajian, serta kewirausahaan di bidang kuliner.",
+        iconName: "key",
+    },
+    {
+        id: 7,
+        title: "Tata Busana",
+        desc: "Program keterampilan menjahit, desain busana, dan pembuatan pakaian sebagai bekal kemandirian dan wirausaha.",
+        iconName: "cap",
+    },
 ];
+
 export interface CurriculumItem {
     id: number;
     title: string;
@@ -89,49 +108,50 @@ export interface CurriculumItem {
 export const curriculumData: CurriculumItem[] = [
     {
         id: 1,
-        title: "Tahap Dasar",
-        desc: "Membangun pondasi akidah, ibadah, akhlak, serta kemampuan membaca Al-Qur'an dengan benar sebagai bekal awal santri.",
+        title: "Kurikulum Pondok Modern",
+        desc: "Membentuk karakter santri melalui pendidikan berasrama yang menanamkan disiplin, kemandirian, kepemimpinan, serta penguasaan bahasa Arab dan Bahasa Inggris.",
         focus: [
-            "Tahsin Al-Qur'an",
-            "Aqidah",
-            "Fiqih Dasar",
-            "Adab Islami",
+            "Pendidikan Karakter",
+            "Kepemimpinan",
+            "Bahasa Arab",
+            "Bahasa Inggris",
         ],
     },
     {
         id: 2,
-        title: "Tahap Menengah",
-        desc: "Mengembangkan kemampuan akademik, bahasa, dan hafalan Al-Qur'an melalui pembelajaran terpadu.",
+        title: "Kurikulum Kementerian Agama",
+        desc: "Menyelenggarakan pendidikan formal sesuai standar Kementerian Agama untuk jenjang MTs dan MA dengan memadukan ilmu agama dan ilmu pengetahuan umum.",
         focus: [
-            "Tahfidz",
-            "Bahasa Arab",
-            "Bahasa Inggris",
+            "Pendidikan Agama Islam",
             "Matematika",
+            "IPA & IPS",
+            "Bahasa Indonesia",
         ],
     },
     {
         id: 3,
-        title: "Tahap Lanjutan",
-        desc: "Memperdalam ilmu syariah, kepemimpinan, serta keterampilan hidup untuk mempersiapkan santri menjadi pribadi mandiri.",
+        title: "Kurikulum Salafiyah",
+        desc: "Memperdalam ilmu-ilmu keislaman melalui kajian kitab kuning sebagai bekal memahami ajaran Islam secara komprehensif.",
         focus: [
+            "Nahwu & Sharaf",
+            "Fiqih",
             "Tafsir",
             "Hadits",
-            "Kepemimpinan",
-            "Public Speaking",
         ],
     },
     {
         id: 4,
-        title: "Tahap Pengabdian",
-        desc: "Membentuk jiwa pengabdian kepada masyarakat melalui praktik dakwah, pendidikan, dan pelayanan sosial.",
+        title: "Program Pengembangan Santri",
+        desc: "Mengembangkan potensi santri melalui program tahfidz, keterampilan, organisasi, dan kegiatan ekstrakurikuler untuk membentuk pribadi yang mandiri dan siap mengabdi.",
         focus: [
-            "Dakwah",
-            "Pengabdian",
-            "Kewirausahaan",
-            "Teknologi",
+            "Tahfidz Al-Qur'an",
+            "Multimedia",
+            "Pengelasan",
+            "Tata Boga & Tata Busana",
         ],
     },
 ];
+
 export interface ExtraItem {
     id: number;
     title: string;
@@ -142,63 +162,63 @@ export interface ExtraItem {
 export const extraData: ExtraItem[] = [
     {
         id: 1,
-        title: "Pramuka",
-        desc: "Melatih kemandirian, kepemimpinan, kedisiplinan, dan kerja sama melalui kegiatan kepramukaan.",
+        title: "Kepramukaan",
+        desc: "Membentuk karakter santri yang disiplin, mandiri, bertanggung jawab, serta memiliki jiwa kepemimpinan dan kerja sama.",
         iconName: "users",
     },
     {
         id: 2,
         title: "Muhadharah",
-        desc: "Melatih kemampuan berbicara di depan umum dan berdakwah menggunakan bahasa yang baik.",
+        desc: "Melatih kemampuan berbicara di depan umum, berdakwah, dan berpidato menggunakan Bahasa Arab, Bahasa Inggris, maupun Bahasa Indonesia.",
         iconName: "volume",
     },
     {
         id: 3,
-        title: "Kajian Kitab",
-        desc: "Memperdalam pemahaman kitab kuning dan ilmu-ilmu keislaman bersama para ustadz.",
+        title: "Kajian Kitab Kuning",
+        desc: "Memperdalam ilmu-ilmu keislaman melalui pembelajaran kitab kuning bersama para asatidz.",
         iconName: "book",
     },
     {
         id: 4,
-        title: "Olimpiade Sains",
-        desc: "Pembinaan santri untuk mengikuti kompetisi Matematika, IPA, dan bidang akademik lainnya.",
-        iconName: "award",
+        title: "Tahfidz Al-Qur'an",
+        desc: "Program pembinaan hafalan Al-Qur'an yang disertai tahsin dan muroja'ah secara berkelanjutan.",
+        iconName: "book",
     },
     {
         id: 5,
-        title: "Tahfidz Club",
-        desc: "Program tambahan bagi santri untuk mempercepat hafalan Al-Qur'an dan murojaah.",
-        iconName: "heart",
+        title: "Klub Bahasa Arab",
+        desc: "Membiasakan santri menggunakan Bahasa Arab dalam komunikasi sehari-hari untuk meningkatkan kemampuan berbahasa.",
+        iconName: "lang-ar",
     },
     {
         id: 6,
-        title: "English Club",
-        desc: "Melatih kemampuan komunikasi Bahasa Inggris melalui diskusi dan praktik sehari-hari.",
-        iconName: "msg",
+        title: "Klub Bahasa Inggris",
+        desc: "Mengembangkan kemampuan komunikasi Bahasa Inggris melalui praktik percakapan, diskusi, dan presentasi.",
+        iconName: "lang-en",
     },
     {
         id: 7,
-        title: "Komputer & IT",
-        desc: "Belajar dasar komputer, internet, desain, dan pemrograman sebagai bekal di era digital.",
+        title: "Multimedia",
+        desc: "Mengembangkan keterampilan desain grafis, fotografi, videografi, editing, dan media digital.",
         iconName: "laptop",
     },
     {
         id: 8,
-        title: "Kaligrafi",
-        desc: "Mengembangkan kreativitas santri melalui seni menulis kaligrafi Arab.",
-        iconName: "palette",
-    },
-    {
-        id: 9,
-        title: "Paskibra",
-        desc: "Melatih kedisiplinan, tanggung jawab, dan jiwa nasionalisme melalui latihan baris-berbaris.",
+        title: "Pengelasan",
+        desc: "Membekali santri dengan keterampilan teknik pengelasan sebagai bekal dunia kerja dan kewirausahaan.",
         iconName: "shield",
     },
     {
-        id: 10,
-        title: "Olahraga",
-        desc: "Berbagai kegiatan olahraga seperti futsal, voli, badminton, dan atletik untuk menjaga kebugaran.",
+        id: 9,
+        title: "Tata Boga",
+        desc: "Melatih keterampilan mengolah makanan, penyajian, serta dasar-dasar kewirausahaan di bidang kuliner.",
         iconName: "activity",
+    },
+    {
+        id: 10,
+        title: "Tata Busana",
+        desc: "Mengembangkan keterampilan menjahit, mendesain, dan membuat berbagai jenis busana secara mandiri.",
+        iconName: "palette",
     },
 ];
 

@@ -42,7 +42,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs md:text-sm text-emerald-100/70 leading-relaxed mt-2">
-              Mencetak Generasi Qurani, Berakhlak Mulia, Berprestasi, dan Berwawasan Global.
+              Menjadi Lembaga Pendidikan Islam Modern yang Unggul, Berakhlakul Karimah,
+              Berprestasi, dan Berwawasan Global.
             </p>
 
             <div className="flex items-center gap-3 mt-4">
@@ -105,11 +106,18 @@ export default function Footer() {
             <ul className="space-y-4 text-xs md:text-sm text-emerald-100/70 mt-2">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4.5 h-4.5 text-brand-gold shrink-0 mt-0.5" />
-                <span>Jl.Imam Bonjol NO. 54 Payaman Nganjuk Jawa Timur</span>
+                <span>
+                  Jl. Imam Bonjol No. 54, Desa Payaman,
+                  Kecamatan Nganjuk, Kabupaten Nganjuk,
+                  Jawa Timur.
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4.5 h-4.5 text-brand-gold shrink-0" />
-                <a href="tel:+62274123456" className="hover:text-white transition-colors">
+                <a
+                  href="tel:+628523361761"
+                  className="hover:text-white transition-colors"
+                >
                   +62 852-3361-761
                 </a>
               </li>

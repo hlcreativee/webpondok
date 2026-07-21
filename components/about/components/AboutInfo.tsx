@@ -6,12 +6,17 @@ import { ShieldCheck, User } from 'lucide-react';
 
 export default function AboutInfo() {
   const missions = [
-    'Menanamkan aqidah Islam yang benar.',
-    'Membentuk karakter santri yang disiplin dan mandiri.',
-    'Mengembangkan kemampuan akademik dan keislaman.',
-    'Membiasakan penggunaan Bahasa Arab dan Bahasa Inggris.',
-    'Membentuk jiwa kepemimpinan.',
-    'Mengembangkan kemampuan teknologi dan keterampilan.',
+    "Menyelenggarakan pendidikan Islam yang memadukan Kurikulum Pondok Modern, Kurikulum Kementerian Agama (Kemenag), dan Kurikulum Salafiyah.",
+
+    "Menanamkan nilai-nilai Panca Jiwa Pondok, yaitu keikhlasan, kesederhanaan, berdikari, ukhuwah Islamiyah, dan kebebasan yang bertanggung jawab.",
+
+    "Membentuk santri yang beriman, bertakwa, berakhlak mulia, disiplin, mandiri, dan berjiwa kepemimpinan.",
+
+    "Mengembangkan kemampuan berbahasa Arab dan Inggris sebagai bekal dakwah dan komunikasi global.",
+
+    "Mendorong prestasi akademik, keagamaan, organisasi, serta keterampilan hidup melalui pendidikan berasrama selama 24 jam.",
+
+    "Membina generasi yang siap mengabdi kepada agama, bangsa, masyarakat, dan umat."
   ];
 
   return (
@@ -37,24 +42,31 @@ export default function AboutInfo() {
             <div className="mt-8 space-y-5 text-slate-600 dark:text-slate-300 leading-8">
 
               <p>
-                Pondok Modern Darul Ihsan didirikan pada tahun 2012 dengan
-                komitmen memadukan pendidikan pesantren yang berlandaskan
-                Al-Qur'an dan As-Sunnah dengan perkembangan ilmu pengetahuan
-                serta teknologi modern.
+                Pondok Modern Darul-Ihsan didirikan pada <strong>20 Februari 1999 </strong>
+                sebagai lembaga pendidikan Islam berbasis pesantren yang berkomitmen
+                mencetak generasi muslim yang beriman, berilmu, berakhlak mulia,
+                mandiri, serta siap mengabdi kepada agama, masyarakat, bangsa, dan
+                negara melalui perpaduan sistem pendidikan pesantren dan pendidikan
+                modern.
               </p>
 
               <p>
-                Berawal dari puluhan santri, pondok berkembang menjadi lembaga
-                pendidikan Islam yang menerapkan sistem KMI (Kulliyatul
-                Mu'allimin Al-Islamiyyah), pembelajaran kitab kuning,
-                tahfidz Al-Qur'an, serta pembiasaan Bahasa Arab dan Bahasa
-                Inggris dalam kehidupan sehari-hari.
+                Dalam penyelenggaraan pendidikannya, Pondok Modern Darul-Ihsan
+                mengintegrasikan <strong>Kurikulum Pondok Modern</strong>,
+                <strong> Kurikulum Kementerian Agama (Kemenag)</strong>, dan
+                <strong> Kurikulum Salafiyah</strong>. Perpaduan tersebut membentuk
+                keseimbangan antara penguasaan ilmu agama, ilmu pengetahuan umum,
+                kemampuan berbahasa Arab dan Inggris, serta pembinaan karakter dan
+                kepemimpinan santri.
               </p>
 
               <p>
-                Dengan sistem pendidikan berasrama selama 24 jam, santri dibina
-                agar memiliki akhlak mulia, disiplin, mandiri, berprestasi, dan
-                siap menjadi pemimpin umat di masa depan.
+                Berlandaskan <strong>Panca Jiwa Pondok</strong>, yaitu keikhlasan,
+                kesederhanaan, berdikari, ukhuwah Islamiyah, dan kebebasan yang
+                bertanggung jawab, Pondok Modern Darul-Ihsan terus membina santri
+                melalui sistem pendidikan berasrama selama 24 jam agar menjadi pribadi
+                yang disiplin, berkarakter, berprestasi, serta mampu memberikan
+                manfaat bagi umat, bangsa, dan negara.
               </p>
 
             </div>
@@ -64,59 +76,75 @@ export default function AboutInfo() {
         </div>
 
         {/* Right */}
-        <div className="lg:col-span-5 flex justify-center">
-
+        <div className="lg:col-span-5">
           <motion.div
-            initial={{ opacity: 0, scale: .9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: .6 }}
-            className="
-              relative
-              overflow-hidden
-              w-full
-              max-w-[360px]
-              rounded-3xl
-              bg-gradient-to-br
-              from-emerald-800
-              to-emerald-950
-              border
-              border-emerald-700/40
-              p-8
-              text-center
-              text-white
-              shadow-2xl
-            "
+            transition={{ duration: 0.6 }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-5"
           >
+            {[
+              {
+                name: "KH. Masrukin Wibowo",
+                role: "Yayasan",
+              },
+              {
+                name: "KH. Muhsin Dahlan",
+                role: "Yayasan",
+              },
+              {
+                name: "Drs. Badrudin, M.M.",
+                role: "Yayasan",
+              },
+              {
+                name: "K. Nur Kholis, S.Pd.I.",
+                role: "Yayasan",
+              },
+              {
+                name: "KH. Imam Masyhadi",
+                role: "Yayasan",
+              },
+              {
+                name: "H. Ali Musthofa, Lc., M.Pd.I.",
+                role: "Direktur",
+              },
+            ].map((person, index) => (
+              <div
+                key={index}
+                className="
+                  relative
+                  overflow-hidden
+                  rounded-2xl
+                  bg-gradient-to-br
+                  from-emerald-800
+                  to-emerald-950
+                  border
+                  border-emerald-700/40
+                  p-6
+                  text-center
+                  text-white
+                  shadow-xl
+                "
+              >
+                <div className="absolute -top-10 -right-10 w-24 h-24 rounded-full bg-emerald-500/10 blur-3xl" />
 
-            <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-emerald-500/10 blur-3xl" />
-            <div className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full bg-emerald-500/10 blur-3xl" />
+                <div className="relative z-10">
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-emerald-500 bg-emerald-700">
+                    <User className="w-8 h-8" />
+                  </div>
 
-            <div className="relative z-10">
+                  <h3 className="text-base font-bold leading-snug">
+                    {person.name}
+                  </h3>
 
-              <div className="mx-auto mb-5 flex h-24 w-24 items-center justify-center rounded-full border-4 border-emerald-600 bg-emerald-700 shadow-lg">
-                <User className="w-12 h-12" />
+                  <p className="mt-2 text-xs uppercase tracking-[0.25em] text-emerald-300">
+                    {person.role}
+                  </p>
+                </div>
               </div>
-
-              <h3 className="text-xl font-bold">
-                K.H. Ahmad Husaini, M.A.
-              </h3>
-
-              <p className="mt-2 text-xs uppercase tracking-[0.3em] text-emerald-300">
-                Pendiri &amp; Pimpinan Pondok
-              </p>
-
-              <div className="mx-auto my-5 h-px w-16 bg-emerald-500" />
-
-              <p className="italic text-sm leading-7 text-emerald-100">
-                "Mendidik hati sebelum mendidik akal, menanamkan keikhlasan
-                sebelum kecakapan ilmu."
-              </p>
-
-            </div>
-
+            ))}
           </motion.div>
-
         </div>
 
       </section>
@@ -160,19 +188,17 @@ export default function AboutInfo() {
               justify-center
             "
           >
-
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-amber-400">
               VISI
             </span>
 
             <h3 className="mt-4 text-2xl font-bold leading-relaxed">
-              Menjadi lembaga pendidikan Islam modern yang menghasilkan
-              generasi berilmu, beriman, berakhlakul karimah, serta mampu
-              bersaing di tingkat nasional maupun internasional.
+              Menjadi lembaga pendidikan Islam yang unggul dalam membentuk generasi
+              muslim yang beriman, berilmu, berakhlak mulia, mandiri, berjiwa
+              kepemimpinan, serta siap mengabdi kepada agama, bangsa, dan masyarakat.
             </h3>
 
             <div className="mt-6 h-1 w-14 rounded-full bg-amber-400" />
-
           </div>
 
           {/* Mission */}
