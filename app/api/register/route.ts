@@ -7,7 +7,15 @@ export async function POST(req: Request) {
         const scriptUrl = process.env.GOOGLE_SCRIPT_URL;
 
         if (!scriptUrl) {
-            throw new Error("GOOGLE_SCRIPT_URL belum tersedia");
+            return NextResponse.json(
+                {
+                    success: false,
+                    message: "GOOGLE_SCRIPT_URL belum diatur",
+                },
+                {
+                    status: 500,
+                }
+            );
         }
 
         const response = await fetch(scriptUrl, {
@@ -21,9 +29,8 @@ export async function POST(req: Request) {
         const data = await response.json();
 
         return NextResponse.json(data);
-
     } catch (error) {
-        console.error("API REGISTER ERROR:", error);
+        console.error(error);
 
         return NextResponse.json(
             {

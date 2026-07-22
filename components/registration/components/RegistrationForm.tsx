@@ -20,6 +20,7 @@ export default function RegistrationForm() {
     register,
     errors,
     isLoading,
+    processStatus,
     successMessage,
     errorMessage,
     setSuccessMessage,
@@ -557,8 +558,12 @@ export default function RegistrationForm() {
 
             {/* Submit Button */}
             <div className="mt-4">
-              <Button type="submit" loading={isLoading} className="w-full h-12 rounded-xl text-base font-bold shadow-lg">
-                Submit Pendaftaran Santri Baru
+              <Button
+                type="submit"
+                loading={isLoading}
+                className="w-full h-12 rounded-xl text-base font-bold shadow-lg"
+              >
+                {processStatus || "Submit Pendaftaran Santri Baru"}
               </Button>
             </div>
           </form>

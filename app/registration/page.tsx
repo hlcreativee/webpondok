@@ -25,7 +25,7 @@ export default function RegistrationPage() {
           <p className="mt-5 text-lg font-medium leading-8 text-slate-700 dark:text-slate-300">
             Silakan isi formulir pendaftaran online di bawah ini secara lengkap
             dan benar untuk mengikuti proses seleksi calon santri baru Pondok
-            Modern Darul Ihsan Tahun Ajaran 2026/2027.
+            Modern Darul Ihsan Tahun Ajaran 2027/2028.
           </p>
         </div>
 

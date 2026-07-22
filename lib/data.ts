@@ -226,112 +226,50 @@ export interface GalleryItem {
     id: number;
     title: string;
     category: string;
-    svgType:
-    | "classroom"
-    | "dormitory"
-    | "speech"
-    | "quran"
-    | "leadership"
-    | "sports"
-    | "graduation"
-    | "tahfidz";
+    image: string;
 }
 
 export const galleryItems: GalleryItem[] = [
     {
         id: 1,
-        title: "Kegiatan Belajar di Kelas",
-        category: "belajar",
-        svgType: "classroom",
+        title: "Classmeeting Sport Putra",
+        category: "santri",
+        image: "https://lh3.googleusercontent.com/d/1LPwtufhD6Ykf3eM4lm6jVmWcXHpdp2XE",
     },
     {
         id: 2,
-        title: "Belajar Kitab Kuning",
-        category: "belajar",
-        svgType: "classroom",
+        title: "Classmeeting Sport Putri",
+        category: "santri",
+        image: "https://lh3.googleusercontent.com/d/13s-_Pv_DPccrbX1q3yhsWvpXZyYwlb-A",
     },
     {
         id: 3,
-        title: "Kegiatan Asrama Putra",
-        category: "asrama",
-        svgType: "dormitory",
+        title: "Paskibra Putra",
+        category: "santri",
+        image: "https://lh3.googleusercontent.com/d/1xkTWUuTixs-SVs8NtqPt9LuVcmcVGaiF",
     },
     {
         id: 4,
-        title: "Kegiatan Asrama Putri",
-        category: "asrama",
-        svgType: "dormitory",
+        title: "Drumband Putra",
+        category: "santri",
+        image: "https://lh3.googleusercontent.com/d/1jIHvmDtnF6DoeR9fGOp6cO5X4CNL9CsC",
     },
     {
         id: 5,
-        title: "Muhadloroh Bahasa Arab",
-        category: "muhadloroh",
-        svgType: "speech",
+        title: "Dewan Ustad",
+        category: "asatidz",
+        image: "https://lh3.googleusercontent.com/d/1NaaPOTeROpSOptkmhWgRGOiM3EvK0B4f",
     },
     {
         id: 6,
-        title: "Muhadloroh Bahasa Inggris",
-        category: "muhadloroh",
-        svgType: "speech",
+        title: "Dewan Ustadzah",
+        category: "asatidz",
+        image: "https://lh3.googleusercontent.com/d/1fa_xyDZeReHtKS_7yTwaiftGskx7VUcV",
     },
     {
         id: 7,
-        title: "Sorogan Al-Qur'an",
-        category: "sorogan",
-        svgType: "quran",
-    },
-    {
-        id: 8,
-        title: "Sorogan Kitab",
-        category: "sorogan",
-        svgType: "quran",
-    },
-    {
-        id: 9,
-        title: "Rapat OPMADA",
-        category: "opmada",
-        svgType: "leadership",
-    },
-    {
-        id: 10,
-        title: "Latihan Kepemimpinan Santri",
-        category: "opmada",
-        svgType: "leadership",
-    },
-    {
-        id: 11,
-        title: "Setoran Hafalan Al-Qur'an",
-        category: "tahfidz",
-        svgType: "tahfidz",
-    },
-    {
-        id: 12,
-        title: "Murojaah Bersama",
-        category: "tahfidz",
-        svgType: "tahfidz",
-    },
-    {
-        id: 13,
-        title: "Wisuda Tahfidz",
-        category: "wisuda",
-        svgType: "graduation",
-    },
-    {
-        id: 14,
-        title: "Pelepasan Santri Akhir",
-        category: "wisuda",
-        svgType: "graduation",
-    },
-    {
-        id: 15,
-        title: "Turnamen Futsal Santri",
-        category: "belajar",
-        svgType: "sports",
-    },
-    {
-        id: 16,
-        title: "Lomba Antar Santri",
-        category: "belajar",
-        svgType: "sports",
+        title: "Pimpinan Pondok",
+        category: "pimpinan",
+        image: "https://lh3.googleusercontent.com/d/1rEHWj13C26Sz1qzVe_YL_LnGyRVu3gpk",
     },
 ];
