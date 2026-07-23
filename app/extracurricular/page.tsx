@@ -3,7 +3,7 @@ import ExtracurricularList from '@/components/extracurricular/components/Extracu
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Ekstrakurikuler - Pondok Modern Darul Ihsan',
+  title: 'Ekstrakurikuler - Pondok Modern "Darul Ihsan"',
   description:
     'Pengembangan diri santri lewat organisasi OPMADA, latihan pidato muhadloroh, pramuka, sholawat hadrah, olahraga voli/futsal, dan IT.',
 };

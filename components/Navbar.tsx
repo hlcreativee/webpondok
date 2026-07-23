@@ -61,7 +61,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col text-left">
               <span className="text-lg font-bold font-display tracking-tight text-emerald-800 dark:text-emerald-400 leading-none">
-                Darul Ihsan
+                "Darul-Ihsan"
               </span>
               <span className="text-[9px] text-gray-500 dark:text-gray-400 font-semibold tracking-wider uppercase mt-1">
                 Pondok Modern

@@ -367,7 +367,7 @@ export default function RegistrationForm() {
 
           <CardDescription
             className="text-muted-foreground">
-            Isi formulir pendaftaran santri baru Pondok Modern Darul Ihsan tahun ajaran 2027/2028 secara lengkap dan benar.
+            Isi formulir pendaftaran santri baru Pondok Modern "Darul-Ihsan" tahun ajaran 2027/2028 secara lengkap dan benar.
           </CardDescription>
 
         </CardHeader>

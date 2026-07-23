@@ -38,7 +38,7 @@ export default function AboutInfo() {
             <div className="mt-8 space-y-5 text-slate-600 dark:text-slate-300 leading-8">
 
               <p>
-                Pondok Modern Darul-Ihsan didirikan pada <strong>20 Februari 1999 </strong>
+                Pondok Modern "Darul-Ihsan" didirikan pada <strong>20 Februari 1999 </strong>
                 sebagai lembaga pendidikan Islam berbasis pesantren yang berkomitmen
                 mencetak generasi muslim yang beriman, berilmu, berakhlak mulia,
                 mandiri, serta siap mengabdi kepada agama, masyarakat, bangsa, dan
@@ -47,7 +47,7 @@ export default function AboutInfo() {
               </p>
 
               <p>
-                Dalam penyelenggaraan pendidikannya, Pondok Modern Darul-Ihsan
+                Dalam penyelenggaraan pendidikannya, Pondok Modern "Darul-Ihsan"
                 mengintegrasikan <strong>Kurikulum Pondok Modern</strong>,
                 <strong> Kurikulum Kementerian Agama (Kemenag)</strong>, dan
                 <strong> Kurikulum Salafiyah</strong>. Perpaduan tersebut membentuk

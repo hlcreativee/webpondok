@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import AboutInfo from '@/components/about/components/AboutInfo';
 
 export const metadata: Metadata = {
-  title: 'Tentang Pondok | Pondok Modern Darul Ihsan',
+  title: 'Tentang Pondok | Pondok Modern "Darul Ihsan""',
   description:
-    'Sejarah singkat, visi, misi, serta profil Pondok Modern Darul Ihsan Payaman Nganjuk Jawa Timur.',
+    'Sejarah singkat, visi, misi, serta profil Pondok Modern "Darul Ihsan" Payaman Nganjuk Jawa Timur.',
 };
 
 export default function AboutPage() {
@@ -26,7 +26,7 @@ export default function AboutPage() {
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-700 dark:text-slate-300">
             Mengenal visi luhur, sejarah berdirinya pondok, visi, misi,
-            serta sosok pimpinan Pondok Modern Darul Ihsan sebagai lembaga
+            serta sosok pimpinan Pondok Modern "Darul-Ihsan"sebagai lembaga
             pendidikan Islam yang berkomitmen mencetak generasi Qurani,
             berakhlak mulia, dan berwawasan global.
           </p>

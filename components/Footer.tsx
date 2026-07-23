@@ -36,7 +36,7 @@ export default function Footer() {
                 />
               </div>
               <span className="text-lg font-bold font-display tracking-tight text-white leading-none">
-                Darul Ihsan
+                "Darul-Ihsan"
                 <span className="block text-[9px] uppercase text-emerald-450 font-semibold tracking-wider mt-1">Pondok Modern</span>
               </span>
             </div>
@@ -149,7 +149,7 @@ export default function Footer() {
         {/* Bottom Line */}
         <div className="border-t border-emerald-900 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-emerald-100/40">
           <p>
-            &copy; {new Date().getFullYear()} Pondok Modern Darul Ihsan.
+            &copy; {new Date().getFullYear()} Pondok Modern "Darul-Ihsan".
             Hak Cipta Dilindungi.
             <span className="mx-2">|</span>
             Designed & Developed by Velibi

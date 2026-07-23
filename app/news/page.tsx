@@ -3,7 +3,7 @@ import NewsList from '@/components/news/components/NewsList';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Berita & Informasi - Pondok Modern Darul Ihsan',
+  title: 'Berita & Informasi - Pondok Modern "Darul Ihsan"',
   description:
     'Informasi pengumuman PSB, liputan prestasi, agenda wisuda tahfidz, studi banding alumni, perlombaan futsal, dan agenda pesantren.',
 };
@@ -26,7 +26,7 @@ export default function NewsPage() {
           <p className="mt-5 text-lg leading-8 text-slate-700 dark:text-slate-300">
             Kumpulan berita resmi, dokumentasi agenda tahunan,
             informasi pengumuman penting, dan catatan prestasi
-            santri Pondok Modern Darul Ihsan.
+            santri Pondok Modern "Darul-Ihsan".
           </p>
 
         </div>

@@ -3,9 +3,9 @@ import ProgramList from '@/components/program/components/ProgramList';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Program Pendidikan - Pondok Modern Darul-Ihsan',
+  title: 'Program Pendidikan - Pondok Modern "Darul Ihsan"',
   description:
-    'Program pendidikan Pondok Modern Darul-Ihsan yang mengintegrasikan Kurikulum Pondok Modern, Kurikulum Kementerian Agama (Kemenag), dan Kurikulum Salafiyah untuk membentuk santri yang beriman, berilmu, berakhlak, dan berjiwa kepemimpinan.',
+    'Program pendidikan Pondok Modern "Darul Ihsan" yang mengintegrasikan Kurikulum Pondok Modern, Kurikulum Kementerian Agama (Kemenag), dan Kurikulum Salafiyah untuk membentuk santri yang beriman, berilmu, berakhlak, dan berjiwa kepemimpinan.',
 };
 
 export default function ProgramsPage() {
@@ -18,11 +18,11 @@ export default function ProgramsPage() {
           </span>
 
           <h1 className="mt-4 text-4xl font-extrabold text-foreground">
-            Program Pendidikan Pondok Modern Darul-Ihsan
+            Program Pendidikan Pondok Modern "Darul-Ihsan"
           </h1>
 
           <p className="mt-5 text-lg leading-8 text-muted-foreground">
-            Pondok Modern Darul-Ihsan menyelenggarakan pendidikan yang
+            Pondok Modern "Darul-Ihsan"n" menyelenggarakan pendidikan yang
             mengintegrasikan <strong>Kurikulum Pondok Modern</strong>,
             <strong> Kurikulum Kementerian Agama (Kemenag)</strong>, dan
             <strong> Kurikulum Salafiyah</strong> sebagai upaya membentuk

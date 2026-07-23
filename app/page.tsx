@@ -90,7 +90,7 @@ export default function Home() {
             </span>
 
             <h2 className="mt-3 text-3xl font-bold text-slate-900 dark:text-white">
-              Pondok Modern Darul-Ihsan
+              Pondok Modern "Darul-Ihsan"
             </h2>
 
             <div className="mt-6 space-y-5 text-base leading-8 text-slate-700 dark:text-slate-300">
@@ -99,7 +99,7 @@ export default function Home() {
                 <br />
                 Segala puji bagi Allah SWT atas limpahan rahmat, taufik,
                 dan hidayah-Nya. Selamat datang di website resmi
-                <strong> Pondok Modern Darul-Ihsan</strong>,
+                <strong> Pondok Modern "Darul-Ihsan"</strong>,
                 media informasi yang menghadirkan berbagai program
                 pendidikan, kegiatan, serta perkembangan pondok
                 kepada santri, wali santri, alumni, dan masyarakat.
@@ -107,7 +107,7 @@ export default function Home() {
 
               <p>
                 Berdiri sejak <strong>20 Februari 1999</strong>,
-                Pondok Modern Darul-Ihsan berkomitmen
+                Pondok Modern "Darul-Ihsan" berkomitmen
                 menyelenggarakan pendidikan Islam yang
                 memadukan nilai-nilai kepesantrenan dengan
                 sistem pendidikan modern tanpa meninggalkan
@@ -116,7 +116,7 @@ export default function Home() {
 
               <p>
                 Dalam penyelenggaraan pendidikan,
-                Pondok Modern Darul-Ihsan mengintegrasikan
+                Pondok Modern "Darul-Ihsan" mengintegrasikan
                 <strong> Kurikulum Pondok Modern</strong>,
                 <strong> Kurikulum Kementerian Agama (Kemenag)</strong>,
                 dan <strong>Kurikulum Salafiyah</strong>.
@@ -177,12 +177,12 @@ export default function Home() {
               </span>
 
               <h2 className="mt-3 text-3xl font-bold">
-                Bergabung Bersama Pondok Modern Darul-Ihsan
+                Bergabung Bersama Pondok Modern "Darul-Ihsan"
               </h2>
 
               <p className="mt-4 max-w-2xl text-emerald-100 leading-8">
                 Jadilah bagian dari keluarga besar Pondok Modern
-                Darul-Ihsan. Raih pendidikan Islam yang
+                "Darul-Ihsan". Raih pendidikan Islam yang
                 memadukan ilmu agama, ilmu pengetahuan,
                 pembinaan karakter, penguasaan bahasa Arab
                 dan Inggris, serta jiwa kepemimpinan dalam

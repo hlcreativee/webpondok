@@ -45,7 +45,7 @@ export default function Hero() {
         >
           Pondok Modern{' '}
           <span className="block sm:inline text-emerald-700 dark:text-emerald-400">
-            Darul Ihsan
+            "Darul-Ihsan"
           </span>
         </motion.h1>
 

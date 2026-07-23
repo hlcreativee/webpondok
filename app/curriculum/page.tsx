@@ -3,9 +3,9 @@ import CurriculumTimeline from '@/components/curriculum/components/CurriculumTim
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kurikulum - Pondok Modern Darul-Ihsan',
+  title: 'Kurikulum - Pondok Modern "Darul Ihsan"',
   description:
-    'Sistem pendidikan Pondok Modern Darul-Ihsan yang mengintegrasikan Kurikulum Pondok Modern, Kurikulum Kementerian Agama (Kemenag), dan Kurikulum Salafiyah untuk membentuk santri yang beriman, berilmu, berakhlak mulia, serta berjiwa kepemimpinan.',
+    'Sistem pendidikan Pondok Modern "Darul Ihsan" yang mengintegrasikan Kurikulum Pondok Modern, Kurikulum Kementerian Agama (Kemenag), dan Kurikulum Salafiyah untuk membentuk santri yang beriman, berilmu, berakhlak mulia, serta berjiwa kepemimpinan.',
 };
 
 export default function CurriculumPage() {
@@ -24,7 +24,7 @@ export default function CurriculumPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-slate-700 dark:text-slate-300">
-            Pondok Modern Darul-Ihsan menerapkan sistem pendidikan yang
+            Pondok Modern "Darul-Ihsan" menerapkan sistem pendidikan yang
             mengintegrasikan <strong>Kurikulum Pondok Modern</strong>,
             <strong> Kurikulum Kementerian Agama (Kemenag)</strong>, dan
             <strong> Kurikulum Salafiyah</strong> untuk mewujudkan

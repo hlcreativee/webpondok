@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import RegistrationForm from '@/components/registration/components/RegistrationForm';
 
 export const metadata: Metadata = {
-  title: 'Pendaftaran Santri Baru - Pondok Modern Darul Ihsan',
+  title: 'Pendaftaran Santri Baru - Pondok Modern "Darul Ihsan"',
   description:
-    'Pendaftaran Online Penerimaan Santri Baru (PSB) Pondok Modern Darul Ihsan Sleman, Yogyakarta tahun ajaran 2026/2027.',
+    'Pendaftaran Online Penerimaan Santri Baru (PSB) Pondok Modern "Darul Ihsan" Payaman, Nganjuk Jawa Timur',
 };
 
 export default function RegistrationPage() {
@@ -25,7 +25,7 @@ export default function RegistrationPage() {
           <p className="mt-5 text-lg font-medium leading-8 text-slate-700 dark:text-slate-300">
             Silakan isi formulir pendaftaran online di bawah ini secara lengkap
             dan benar untuk mengikuti proses seleksi calon santri baru Pondok
-            Modern Darul Ihsan Tahun Ajaran 2027/2028.
+            Modern "Darul-Ihsan" Tahun Ajaran 2027/2028.
           </p>
         </div>
 

@@ -37,7 +37,7 @@ export default function Stats() {
     {
       id: 'alumni',
       label: 'Alumni',
-      value: '900+',
+      value: '1000+',
       desc: 'Negara studi & pengabdian alumni',
       icon: <Award className="w-6 h-6" />,
       colorClass:

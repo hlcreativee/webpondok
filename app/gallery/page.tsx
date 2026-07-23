@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import MasonryGallery from '@/components/gallery/components/MasonryGallery';
 
 export const metadata: Metadata = {
-  title: 'Galeri Aktivitas - Pondok Modern Darul Ihsan',
+  title: 'Galeri Aktivitas - Pondok Modern "Darul Ihsan"',
   description:
     'Dokumentasi visual kegiatan belajar, asrama, muhadloroh, sorogan kitab kuning, organisasi OPMADA, wisuda tahfidz, dan perlombaan.',
 };
@@ -24,7 +24,7 @@ export default function GalleryPage() {
           <p className="mt-5 text-lg font-medium leading-8 !text-slate-800 dark:!text-slate-300">
             Mengintip keseharian, momen berprestasi, kebersamaan di asrama,
             serta berbagai kegiatan pendidikan dan pembinaan karakter di
-            Pondok Modern Darul Ihsan.
+            Pondok Modern "Darul-Ihsan".
           </p>
         </div>
 

@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://pmdi-pondokdarulihsan.vercel.app'),
 
   title: {
-    default: 'Pondok Modern Darul-Ihsan',
+    default: 'Pondok Modern "Darul Ihsan"',
     template: '%s | Pondok Modern Darul-Ihsan',
   },
 
   description:
-    'Website resmi Pondok Modern Darul-Ihsan Payaman, Nganjuk, Jawa Timur. Mengintegrasikan Kurikulum Pondok Modern, Kurikulum Kementerian Agama, dan Kurikulum Salafiyah untuk mencetak generasi beriman, berilmu, berakhlakul karimah, dan berprestasi.',
+    'Website resmi Pondok Modern "Darul Ihsan" Payaman, Nganjuk, Jawa Timur. Mengintegrasikan Kurikulum Pondok Modern, Kurikulum Kementerian Agama, dan Kurikulum Salafiyah untuk mencetak generasi beriman, berilmu, berakhlakul karimah, dan berprestasi.',
 
   keywords: [
     'Pondok Modern Darul Ihsan',
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: 'Pondok Modern Darul-Ihsan',
+      name: 'Pondok Modern "Darul Ihsan"',
     },
   ],
 
-  creator: 'Pondok Modern Darul-Ihsan',
+  creator: 'Pondok Modern "Darul Ihsan"',
 
-  publisher: 'Pondok Modern Darul-Ihsan',
+  publisher: 'Pondok Modern "Darul Ihsan"',
 
   alternates: {
     canonical: '/',
@@ -64,26 +64,26 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'id_ID',
     url: 'https://pmdi-pondokdarulihsan.vercel.app',
-    siteName: 'Pondok Modern Darul-Ihsan',
-    title: 'Pondok Modern Darul-Ihsan',
+    siteName: 'Pondok Modern "Darul Ihsan"',
+    title: 'Pondok Modern "Darul Ihsan"',
     description:
-      'Website resmi Pondok Modern Darul-Ihsan Payaman Nganjuk.',
+      'Website resmi Pondok Modern "Darul Ihsan" Payaman Nganjuk.',
 
     images: [
       {
         url: '/logopondok.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Pondok Modern Darul-Ihsan',
+        alt: 'Pondok Modern "Darul Ihsan"',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Pondok Modern Darul-Ihsan',
+    title: 'Pondok Modern "Darul Ihsan"',
     description:
-      'Website resmi Pondok Modern Darul-Ihsan Payaman Nganjuk.',
+      'Website resmi Pondok Modern "Darul Ihsan" Payaman Nganjuk.',
     images: ['/logopondok.jpeg'],
   },
 

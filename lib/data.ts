@@ -25,7 +25,7 @@ export const newsArticles: NewsArticle[] = [
         date: "23 Juli 2026",
         svgType: "announcement",
         content: [
-            "Pondok Modern Darul Ihsan membuka pendaftaran santri baru tahun ajaran 2027/2028.",
+            "Pondok Modern 'Darul-Ihsan' membuka pendaftaran santri baru tahun ajaran 2027/2028.",
             "Pendaftaran dapat dilakukan secara online maupun langsung ke sekretariat pondok.",
             "Informasi lengkap tersedia pada halaman pendaftaran."
         ]
