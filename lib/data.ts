@@ -18,28 +18,28 @@ export interface NewsArticle {
 export const newsArticles: NewsArticle[] = [
     {
         id: "1",
-        title: "Penerimaan Santri Baru Tahun Ajaran 2026/2027",
+        title: "Penerimaan Santri Baru Tahun Ajaran 2027/2028",
         summary: "Pendaftaran santri baru resmi dibuka.",
         category: "Pengumuman",
         author: "Admin",
-        date: "16 Juli 2026",
+        date: "23 Juli 2026",
         svgType: "announcement",
         content: [
-            "Pondok Modern Darul Ihsan membuka pendaftaran santri baru tahun ajaran 2026/2027.",
+            "Pondok Modern Darul Ihsan membuka pendaftaran santri baru tahun ajaran 2027/2028.",
             "Pendaftaran dapat dilakukan secara online maupun langsung ke sekretariat pondok.",
             "Informasi lengkap tersedia pada halaman pendaftaran."
         ]
     },
     {
         id: "2",
-        title: "Wisuda Tahfidz Angkatan Ke-10",
-        summary: "Sebanyak 40 santri mengikuti wisuda tahfidz.",
+        title: "Haflah Akhiru Sanah 2027",
+        summary: "Wisuda Santri Kelas 6 KMI PMDI.",
         category: "Berita",
         author: "Admin",
-        date: "10 Juli 2026",
+        date: "Coming Soon",
         svgType: "graduation",
         content: [
-            "Wisuda tahfidz dilaksanakan di aula utama pondok.",
+            "Wisuda dilaksanakan di halaman utama pondok.",
             "Acara dihadiri wali santri dan masyarakat.",
             "Para santri berhasil menyelesaikan target hafalan."
         ]

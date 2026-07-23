@@ -45,25 +45,30 @@ export const registrationSchema = z.object({
     .string()
     .min(3, { message: "Asal sekolah minimal 3 karakter." }),
 
-  schoolLevel: z.enum(["mts", "ma"], {
-    message: "Pilih jenjang sekolah.",
-  }),
+  schoolLevel: z.enum(
+    [
+      "Kelas 1 Reguler KMI PMDI (Jenjang SMP/MTs)",
+      "Kelas 1 Tahfidzul Qur'an KMI PMDI (Jenjang SMP/MTs)",
+      "Kelas 1 Intensif KMI PMDI (Jenjang SMA/MA)",
+    ],
+    {
+      message: "Pilih jenjang sekolah.",
+    }
+  ),
 
   photo: z.any().optional(),
   familyCard: z.any().optional(),
   birthCert: z.any().optional(),
-  reportCard: z.any().optional(),
 });
 
 export type RegistrationFormInput = z.infer<typeof registrationSchema>;
 
 export type RegistrationAPIInput = Omit<
   RegistrationFormInput,
-  "photo" | "familyCard" | "birthCert" | "reportCard"
+  "photo" | "familyCard" | "birthCert"
 > & {
   timestamp: string;
   photoUrl: string;
   familyCardUrl: string;
   birthCertUrl: string;
-  reportCardUrl: string;
 };

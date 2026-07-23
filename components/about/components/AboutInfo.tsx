@@ -6,17 +6,13 @@ import { ShieldCheck, User } from 'lucide-react';
 
 export default function AboutInfo() {
   const missions = [
-    "Menyelenggarakan pendidikan Islam yang memadukan Kurikulum Pondok Modern, Kurikulum Kementerian Agama (Kemenag), dan Kurikulum Salafiyah.",
+    "Menjadikan lembaga pendidikan yang Islami dan berkualitas.",
 
-    "Menanamkan nilai-nilai Panca Jiwa Pondok, yaitu keikhlasan, kesederhanaan, berdikari, ukhuwah Islamiyah, dan kebebasan yang bertanggung jawab.",
+    "Meningkatkan profesionalisme.",
 
-    "Membentuk santri yang beriman, bertakwa, berakhlak mulia, disiplin, mandiri, dan berjiwa kepemimpinan.",
+    "Membentuk pribadi muslim dan muslimah yang beraqidah serta berakhlakul karimah.",
 
-    "Mengembangkan kemampuan berbahasa Arab dan Inggris sebagai bekal dakwah dan komunikasi global.",
-
-    "Mendorong prestasi akademik, keagamaan, organisasi, serta keterampilan hidup melalui pendidikan berasrama selama 24 jam.",
-
-    "Membina generasi yang siap mengabdi kepada agama, bangsa, masyarakat, dan umat."
+    "Membekali peserta didik di bidang akademik (IQ), spiritual, dan keterampilan hidup (life skill), serta mengantarkannya ke jenjang pendidikan yang lebih tinggi."
   ];
 
   return (
@@ -87,27 +83,27 @@ export default function AboutInfo() {
             {[
               {
                 name: "KH. Masrukin Wibowo",
-                role: "Yayasan",
+                role: "Pendiri Pondok",
               },
               {
                 name: "KH. Muhsin Dahlan",
-                role: "Yayasan",
+                role: "Pendiri Pondok",
               },
               {
                 name: "Drs. Badrudin, M.M.",
-                role: "Yayasan",
+                role: "Pendiri Pondok",
               },
               {
                 name: "K. Nur Kholis, S.Pd.I.",
-                role: "Yayasan",
+                role: "Pendiri Pondok",
               },
               {
                 name: "KH. Imam Masyhadi",
-                role: "Yayasan",
+                role: "Pendiri Pondok dan Ketua Yayasan",
               },
               {
-                name: "H. Ali Musthofa, Lc., M.Pd.I.",
-                role: "Direktur",
+                name: "H. Ali Musthofa Izzat, Lc., M.Pd.I.",
+                role: "Pendiri Pondok dan Direktur",
               },
             ].map((person, index) => (
               <div
@@ -193,9 +189,9 @@ export default function AboutInfo() {
             </span>
 
             <h3 className="mt-4 text-2xl font-bold leading-relaxed">
-              Menjadi lembaga pendidikan Islam yang unggul dalam membentuk generasi
-              muslim yang beriman, berilmu, berakhlak mulia, mandiri, berjiwa
-              kepemimpinan, serta siap mengabdi kepada agama, bangsa, dan masyarakat.
+              Terbentuknya generasi <em>Mutafaqqihina Fii al-Diin</em> yang mempunyai
+              militansi yang tinggi dalam perjuangan serta berkarakter Islam dan tanggap
+              terhadap perkembangan ilmu pengetahuan dan teknologi.
             </h3>
 
             <div className="mt-6 h-1 w-14 rounded-full bg-amber-400" />

@@ -258,36 +258,6 @@ export function useRegistration(
 
         }
 
-
-
-
-
-
-
-        if (data.reportCard?.[0]) {
-
-
-          setProcessStatus(
-            "Mengupload Rapor..."
-          );
-
-
-
-          reportCardUrl =
-            await uploadFile(
-              data.reportCard[0],
-              'reportCard'
-            );
-
-        }
-
-
-
-
-
-
-
-
         const apiPayload:
           RegistrationAPIInput =
         {
@@ -347,10 +317,6 @@ export function useRegistration(
 
 
           birthCertUrl,
-
-
-          reportCardUrl,
-
 
         };
 
@@ -501,9 +467,6 @@ export function useRegistration(
 
     errors,
 
-
-
-    // tombol loading aktif saat upload / submit
     isLoading:
       mutation.isPending ||
       !!processStatus,

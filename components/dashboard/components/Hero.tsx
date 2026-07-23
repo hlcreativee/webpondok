@@ -56,8 +56,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-6 max-w-2xl text-lg md:text-xl leading-relaxed italic text-slate-600 dark:text-slate-300"
         >
-          &quot;Mewujudkan Generasi Muslim yang Beriman, Berilmu,
-          Berakhlakul Karimah, Mandiri, dan Berprestasi.&quot;
+          &quot;Terbentuknya generasi yang <span className="font-semibold">Mutafaqqihina Fii al-Diin</span>,
+          yang mempunyai militansi yang tinggi dalam perjuangan serta berkarakter Islam
+          dan tanggap terhadap perkembangan ilmu pengetahuan dan teknologi.&quot;
         </motion.p>
 
         {/* Buttons */}

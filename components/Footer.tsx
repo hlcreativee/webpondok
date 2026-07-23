@@ -41,8 +41,9 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs md:text-sm text-emerald-100/70 leading-relaxed mt-2">
-              Menjadi Lembaga Pendidikan Islam Modern yang Unggul, Berakhlakul Karimah,
-              Berprestasi, dan Berwawasan Global.
+              Terbentuknya generasi <span className="font-semibold">Mutafaqqihina Fii al-Diin </span>
+              yang mempunyai militansi yang tinggi dalam perjuangan serta berkarakter Islam
+              dan tanggap terhadap perkembangan ilmu pengetahuan dan teknologi.
             </p>
 
             <div className="flex items-center gap-3 mt-4">

@@ -367,7 +367,7 @@ export default function RegistrationForm() {
 
           <CardDescription
             className="text-muted-foreground">
-            Isi formulir pendaftaran santri baru Pondok Modern Darul Ihsan tahun ajaran 2026/2027 secara lengkap dan benar.
+            Isi formulir pendaftaran santri baru Pondok Modern Darul Ihsan tahun ajaran 2027/2028 secara lengkap dan benar.
           </CardDescription>
 
         </CardHeader>
@@ -522,8 +522,17 @@ export default function RegistrationForm() {
                     "
                   >
                     <option value="">-- Pilih Jenjang --</option>
-                    <option value="mts">Madrasah Tsanawiyah (MTs)</option>
-                    <option value="ma">Madrasah Aliyah (MA)</option>
+                    <option value="Kelas 1 Reguler KMI PMDI (Jenjang SMP/MTs)">
+                      Kelas 1 Reguler KMI PMDI (Jenjang SMP/MTs)
+                    </option>
+
+                    <option value="Kelas 1 Tahfidzul Qur&apos;an KMI PMDI (Jenjang SMP/MTs)">
+                      Kelas 1 Tahfidzul Qur&apos;an KMI PMDI (Jenjang SMP/MTs)
+                    </option>
+
+                    <option value="Kelas 1 Intensif KMI PMDI (Jenjang SMA/MA)">
+                      Kelas 1 Intensif KMI PMDI (Jenjang SMA/MA)
+                    </option>
                   </select>
                   {errors.schoolLevel && <p className="text-[11px] text-red-500 font-semibold">{errors.schoolLevel.message}</p>}
                 </div>
@@ -546,12 +555,6 @@ export default function RegistrationForm() {
                 <div className="flex flex-col gap-1.5">
                   <label className="text-xs font-bold text-gray-700 dark:text-gray-300">Upload Akta Kelahiran</label>
                   <input type="file" {...register('birthCert')} className="w-full text-xs text-gray-400 file:mr-3 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 dark:file:bg-emerald-950/20 file:text-emerald-700 dark:file:text-emerald-400 border border-gray-250 dark:border-gray-800 rounded-xl" />
-                </div>
-
-                {/* Upload Rapor */}
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-bold text-gray-700 dark:text-gray-300">Upload Rapor Semester Terakhir</label>
-                  <input type="file" {...register('reportCard')} className="w-full text-xs text-gray-400 file:mr-3 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 dark:file:bg-emerald-950/20 file:text-emerald-700 dark:file:text-emerald-400 border border-gray-250 dark:border-gray-800 rounded-xl" />
                 </div>
               </div>
             </div>
