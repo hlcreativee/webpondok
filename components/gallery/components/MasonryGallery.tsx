@@ -23,6 +23,11 @@ export default function MasonryGallery() {
     { id: 'asatidz', label: 'Asatidz' },
     { id: 'tahfidz', label: 'Tahfidz' },
     { id: 'wisuda', label: 'Wisuda' },
+    { id: 'pramuka', label: 'Pramuka' },
+    { id: 'paskibra', label: 'Paskibra' },
+    { id: 'pekan-perkenalan', label: 'Pekan Perkenalan' },
+    { id: 'kunjungan', label: 'Kunjungan' },
+    { id: 'akhiru-khidmat', label: 'Akhiru Khidmat' },
   ];
 
 

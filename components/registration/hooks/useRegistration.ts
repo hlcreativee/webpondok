@@ -190,8 +190,6 @@ export function useRegistration(
 
         let birthCertUrl = '';
 
-        let reportCardUrl = '';
-
 
 
 

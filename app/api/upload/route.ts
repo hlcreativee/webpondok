@@ -94,11 +94,7 @@ export async function POST(req: Request) {
             );
 
 
-
-        const result =
-            await response.json();
-
-
+        const result = await response.json();
 
         if (!result.success) {
 
