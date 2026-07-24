@@ -12,22 +12,14 @@ export default function MasonryGallery() {
 
   const categories = [
     { id: 'all', label: 'Semua' },
-    { id: 'belajar', label: 'Kegiatan Belajar' },
     { id: 'asrama', label: 'Kegiatan Asrama' },
-    { id: 'muhadloroh', label: 'Muhadloroh' },
-    { id: 'sorogan', label: 'Sorogan' },
     { id: 'opmada', label: 'OPMADA' },
     { id: 'pengasuhan', label: 'Pengasuhan' },
     { id: 'santri', label: 'Santri' },
     { id: 'pimpinan', label: 'Pimpinan' },
     { id: 'asatidz', label: 'Asatidz' },
-    { id: 'tahfidz', label: 'Tahfidz' },
     { id: 'wisuda', label: 'Wisuda' },
-    { id: 'pramuka', label: 'Pramuka' },
-    { id: 'paskibra', label: 'Paskibra' },
-    { id: 'pekan-perkenalan', label: 'Pekan Perkenalan' },
     { id: 'kunjungan', label: 'Kunjungan' },
-    { id: 'akhiru-khidmat', label: 'Akhiru Khidmat' },
   ];
 
 
